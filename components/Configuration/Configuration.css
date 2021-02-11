@@ -1,0 +1,74 @@
+.configuration-container
+{
+    width: 80%;
+    height: 80vh;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: auto;
+    padding: var(--spacing-large);
+    background: var(--color-white);
+    box-shadow: var(--box-shadow);
+    overflow: scroll;
+    overflow-x: hidden;
+    font-family: 'Roboto', sans-serif;
+}
+
+.configuration-list
+{
+    padding: var(--spacing-medium) var(--spacing-small);
+}
+
+.configuration-element
+{
+    float: left;
+    width: 100%;
+    padding-bottom: 10px;
+}
+
+.configuration-element__name
+{
+    font-weight: bold;
+    float: left;
+}
+
+.configuration-element__buttons
+{
+    float: right;
+}
+
+.configuration-element__price
+{
+    padding-left: var(--spacing-medium);
+    color: var(--color-unaccent);
+}
+
+.configuration-element__btn
+{
+    margin: 2px 2px;
+    padding: 2px 10px;
+    float: right;
+    border: 1px solid var(--color-unaccent);
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+    background: none;
+    font-size: inherit;
+    font-family: 'Roboto', sans-serif;
+    transition-duration: 0.2s;
+}
+
+.configuration-element__btn:hover
+{
+    background: var(--linear-gradient);
+    transition-duration: 0.2s;
+}
+
+.configuration-element__btn_active
+{
+    border: 1px solid transparent;
+    background: var(--linear-gradient);
+    font-family: 'Roboto', sans-serif;
+    transition-duration: 0.2s;
+}

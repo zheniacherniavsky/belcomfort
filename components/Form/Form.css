@@ -1,0 +1,90 @@
+.orderform-container
+{
+    width: 50%;
+    height: 80vh;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: auto;
+    padding: var(--spacing-large);
+    background: var(--color-white);
+    box-shadow: var(--box-shadow);
+    overflow: scroll;
+    overflow-x: hidden;
+    font-family: 'Roboto', sans-serif;
+    display: none;
+}
+
+@media screen and (max-width: 1000px)
+{
+    .orderform-container
+    {
+        width: 100%;
+        height: 100vh;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        margin: auto;
+        padding: var(--spacing-large);
+        background: var(--color-white);
+        box-shadow: var(--box-shadow);
+        overflow: scroll;
+        overflow-x: hidden;
+        font-family: 'Roboto', sans-serif;
+        display: none;
+    }
+}
+
+.orderform-container__body_input
+{
+    width: 100%;
+    height: 100px;
+}
+
+.orderform-container__body_input_name
+{
+    font-size: 1.2em;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
+
+.orderform-container__body_input_field input
+{
+    border: 1px solid var(--color-unaccent);
+    height: 40px;
+    width: 80%;
+    border-radius: 5px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.1em;
+    font-weight: 300;
+    padding-left: 10px;
+}
+
+.orderform-container__body_button
+{
+    width: 100%;
+}
+
+.orderform-container__body_button button
+{
+    width: 80%;
+    height: 50px;
+    border-radius: 20px;
+    border: 1px solid var(--color-unaccent);
+    background: var(--color-white);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 1.3em;
+}
+
+.orderform-container__body_button button:hover
+{
+    width: 80%;
+    height: 50px;
+    border-radius: 20px;
+    border: 2px solid var(--color-unaccent);
+    background: var(--linear-gradient);
+    cursor: pointer;
+}
